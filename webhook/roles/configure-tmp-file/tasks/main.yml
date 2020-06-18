@@ -1,0 +1,10 @@
+---
+#- name: Configure a file in /tmp
+#  file:
+#    path: /tmp/webhook-test.txt
+#    state: file
+#
+- name: Create content to /tmp/webhook-test.txt
+  copy:
+    dest: /tmp/webhook-test.txt
+    content: "{{ CONTENT }}"

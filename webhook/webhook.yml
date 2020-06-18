@@ -1,0 +1,7 @@
+---
+- name: Configure a file in /tmp
+  hosts: all
+  become: no
+  roles:
+    - configure-tmp-file
+...
